@@ -1,0 +1,139 @@
+
+.confirmation-page {
+  min-height: 100vh;
+  background: #0b0b14;
+  color: white;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirmation-card {
+  width: 100%;
+  max-width: 650px;
+  background: #171725;
+  border: 1px solid #29293b;
+  border-radius: 18px;
+  padding: 35px;
+}
+
+.confirmation-success {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.success-icon {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #287d58;
+  color: white;
+  font-size: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirmation-success h1 {
+  color: #35c98a;
+  margin-bottom: 10px;
+}
+
+.confirmation-success p,
+.confirmation-note {
+  color: #aaa;
+}
+
+.ticket-movie {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ticket-movie img {
+  width: 90px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.ticket-movie h2 {
+  margin-bottom: 8px;
+}
+
+.ticket-movie p {
+  color: #aaa;
+}
+
+.ticket-divider {
+  border-top: 1px dashed #555;
+  margin: 25px 0;
+}
+
+.ticket-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 15px;
+}
+
+.ticket-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.ticket-info span,
+.ticket-total span {
+  color: #999;
+  font-size: 13px;
+}
+
+.ticket-info strong {
+  overflow-wrap: anywhere;
+}
+
+.ticket-total {
+  border-top: 1px solid #38384a;
+  margin-top: 28px;
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket-total strong {
+  font-size: 25px;
+  color: #f5b400;
+}
+
+.confirmation-note {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.home-btn {
+  width: 100%;
+  padding: 15px;
+  background: #f5b400;
+  color: #111;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.home-btn:hover {
+  background: #ffca35;
+}
+
+@media (max-width: 500px) {
+  .confirmation-card {
+    padding: 22px;
+  }
+
+  .ticket-info {
+    grid-template-columns: 1fr;
+  }
+}
